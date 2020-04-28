@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Web_1920_2">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_2" data-name="Web 1920 – 2" clip-path="url(#clip-Web_1920_2)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <g id="Group_4" data-name="Group 4" transform="translate(-959 620.547)">
+      <path id="Intersection_1" data-name="Intersection 1" d="M0,667V325.5C319.529,135.311,1138.86,0,2099.167,0Q2195.537,0,2290,1.794V667Z" transform="translate(590 262.453)" fill="rgba(149,35,199,0.74)"/>
+      <path id="Intersection_2" data-name="Intersection 2" d="M-2.844,691.46,6.363,364.038C374.625,172.733,1309.417,20.019,2400.775-6.918Q2510.3-9.621,2617.6-10.55L2599.67,627.224Z" transform="translate(519.915 99.237) rotate(11)" fill="rgba(172,191,253,0.6)"/>
+      <path id="Intersection_3" data-name="Intersection 3" d="M0,909V443.591C311.158,184.4,1109.021,0,2044.166,0Q2138.012,0,2230,2.446V909Z" transform="translate(960 235.453)" fill="rgba(192,70,146,0.7)"/>
+    </g>
+  </g>
+   <animate 
+           xlink:href="#Group_4"
+           attributeName="x" 
+           from="50"
+           to="300" 
+           dur="5s"
+           begin="0s"
+           repeatCount="indefinite"
+           fill="freeze" 
+           id="rect-anim"/>
+</svg>

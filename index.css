@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 0 4rem;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #9523C7;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 2rem;
+}
+
+nav .icon {
+  display: none;
+}
+
+.side-nav {
+  height: 100%;
+  width: 300px;
+  z-index: 2;
+  position: fixed;
+  right: 0;
+  background: #fff;
+  -webkit-transform: translateX(900px);
+          transform: translateX(900px);
+  -webkit-transition: -webkit-transform 0.8s ease-out;
+  transition: -webkit-transform 0.8s ease-out;
+  transition: transform 0.8s ease-out;
+  transition: transform 0.8s ease-out, -webkit-transform 0.8s ease-out;
+}
+
+.side-nav .icon-box {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2rem;
+}
+
+.side-nav .side-nav-links {
+  width: 100%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: end;
+      -ms-flex: end;
+          flex: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.side-nav .side-nav-links li {
+  list-style: none;
+  margin: 2rem auto;
+}
+
+.side-nav .side-nav-links li a {
+  text-decoration: none;
+  color: #CC5085;
+  font-weight: 500;
+}
+
+.slide-in {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+}
+
+section#sign-up {
+  height: 100vh;
+  width: 100%;
+  background: url(bg.svg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin: auto;
+}
+
+.sign-up {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sign-up .call-to-action {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign-up .call-to-action h1 {
+  font-size: 4.5rem;
+  text-align: left;
+  color: #CB4F86;
+  -webkit-transform: translateX(-900px);
+          transform: translateX(-900px);
+  -webkit-animation: slideInFromLeft 1.5s ease-in-out;
+          animation: slideInFromLeft 1.5s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.sign-up form {
+  width: 50%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: floatIn 1s ease-in-out;
+          animation: floatIn 1s ease-in-out;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: opacity 0.8s ease-out, -webkit-transform 1s ease-out;
+  transition: opacity 0.8s ease-out, -webkit-transform 1s ease-out;
+  transition: opacity 0.8s ease-out, transform 1s ease-out;
+  transition: opacity 0.8s ease-out, transform 1s ease-out, -webkit-transform 1s ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.sign-up form input, .sign-up form button {
+  height: 2.8rem;
+  width: 60%;
+  margin: 1rem auto;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  font-size: 0.9rem;
+}
+
+.sign-up form input {
+  padding-left: 1rem;
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+}
+
+.sign-up form input:focus {
+  outline: none;
+  border: 3px solid rgba(196, 15, 181, 0.5);
+}
+
+.sign-up form button {
+  cursor: pointer;
+  border: none;
+  background: #5f5ff8;
+  color: #fff;
+}
+
+.sign-up form button.primary-btn {
+  background: linear-gradient(45deg, #CC5085, #9523C7);
+  color: #fff;
+}
+
+@-webkit-keyframes slideInFromLeft {
+  from {
+    -webkit-transform: translateX(-900px);
+            transform: translateX(-900px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    -webkit-transform: translateX(-900px);
+            transform: translateX(-900px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes floatIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav .nav-links {
+    display: none;
+  }
+  nav .icon {
+    display: block;
+  }
+  .sign-up {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sign-up .call-to-action, .sign-up form {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .sign-up form {
+    margin-top: 2rem !important;
+  }
+  .sign-up form input, .sign-up form button {
+    margin: 0.5rem auto !important;
+  }
+  .sign-up input, .sign-up button {
+    width: 80% !important;
+  }
+  .sign-up .call-to-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sign-up .call-to-action h1 {
+    text-align: center !important;
+    font-size: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    padding: 0 2rem;
+  }
+  nav .icon {
+    display: inline-block;
+  }
+  .sign-up {
+    width: 100%;
+  }
+  .sign-up .call-to-action h1 {
+    font-size: 1.5rem !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */
